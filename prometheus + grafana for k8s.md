@@ -33,9 +33,12 @@ dig +short myip.opendns.com @resolver1.opendns.com
 kubectl get svc -n kube-system
 ```
 
-5. Use IP:grafana port to access the web interface
+5. Use "IP:grafana port" to access the web interface
+```
 User: admin
 Password: admin
+```
+
 
 
 #reference
