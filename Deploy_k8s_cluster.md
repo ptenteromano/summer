@@ -60,23 +60,23 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 ```
 
 3. On each slaves nodes copy and run what you got in kubeadm init: (example)
-````
+```
 kubeadm join 128.110.153.78:6443 --token 7cmbqs.zx7j57hzp64zwcei \
     --discovery-token-ca-cert-hash sha256:ac04125e58767ddf33e390848a7b9beac0e79b537393998b0349296e72cc6bc6
-````
+```
 
 4. check status on master node:
 ```
 kubectl get nodes
 kubectl get pod --all-namespaces
 ```
-# all nodes should be ready: (example)
-
+5. all nodes should be ready: (example)
+```
 NAME                                               STATUS   ROLES    AGE     VERSION
 cp-1.zsl3203-qv50305.shield-pg0.wisc.cloudlab.us   Ready    <none>   99s     v1.14.1
 cp-2.zsl3203-qv50305.shield-pg0.wisc.cloudlab.us   Ready    <none>   97s     v1.14.1
 ctl.zsl3203-qv50305.shield-pg0.wisc.cloudlab.us    Ready    master   3m49s   v1.14.1
-
+```
 
 
 
