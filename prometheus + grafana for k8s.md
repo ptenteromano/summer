@@ -31,8 +31,7 @@ kubectl create -f   k8s-prometheus-grafana/grafana/grafana-ing.yaml
 ```
 dig +short myip.opendns.com @resolver1.opendns.com
 128.110.153.147
-```
-```
+
 kubectl get svc -n kube-system
 NAME            TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE
 grafana         NodePort    10.104.149.229   <none>        3000:30435/TCP           58s
