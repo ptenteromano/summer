@@ -40,13 +40,22 @@ node-exporter   NodePort    10.103.17.118    <none>        9100:31672/TCP       
 prometheus      NodePort    10.104.249.31    <none>        9090:30003/TCP           59s
 ```
 
-5. Use 128.110.153.147:30435 to access the web interface
+5. Use 128.110.153.147:30435 (example) to access the web interface
 ```
 User: admin
 Password: admin
 ```
 
+6. Add data source
+```
+Type: Prometheus
+Url: http://prometheus:9090
+Access: proxy
+```
 
+7. Dashboards Import: https:///dashboards/315
 
-#reference
+## Done
+
+## reference
 https://blog.51cto.com/kaliarch/2160569
