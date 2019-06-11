@@ -1,7 +1,7 @@
 # Deploy prometheus + grafana for k8s
 
 ## Prerequisite
-We need a ready and all running k8s cluster (referring to Deploy_k8s_cluster.md)
+We need a ready and all running k8s cluster (referring to README.md)
 
 1. On master 
 ```
