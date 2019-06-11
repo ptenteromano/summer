@@ -63,7 +63,7 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documen
 ````
 kubeadm join 128.110.153.78:6443 --token 7cmbqs.zx7j57hzp64zwcei \
     --discovery-token-ca-cert-hash sha256:ac04125e58767ddf33e390848a7b9beac0e79b537393998b0349296e72cc6bc6
-```
+````
 
 4. check status on master node:
 ```
