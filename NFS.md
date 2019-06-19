@@ -1,9 +1,9 @@
 # Deploy NFS server and client on Ubuntu
 
-##Prerequisite
+## Prerequisite
 we need a runnig cluster (master and workers connected)
 
-###Configure server(master)
+### Configure server(master)
 1. On master: install and create an export dir /mnt/linuxidc
 ```
 sudo apt-get update
@@ -35,7 +35,7 @@ sudo ufw allow from [clientIP or clientSubnetIP] to any port nfs
 sudo ufw status
 ``` 
 
-###Configure clients(workers)
+### Configure clients(workers)
 5.On workers: install and create sharing dir /mnt/linuxidc_client
 ```
 sudo apt-get update
@@ -48,7 +48,7 @@ sudo mkdir -p /mnt/linuxidc_client
 sudo mount serverIP:/shareFolder_server /mnt/mountfolder_client
 ```
 
-###Testing
+### Testing
 7. Create a new file in master /mnt/linuxidc, see if the file is shared to workers /mnt/linuxidc_client
 
 
