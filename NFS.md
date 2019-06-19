@@ -36,7 +36,7 @@ sudo ufw status
 ``` 
 
 ### Configure clients(workers)
-5.On workers: install and create sharing dir /mnt/linuxidc_client
+5. On workers: install and create sharing dir /mnt/linuxidc_client
 ```
 sudo apt-get update
 sudo apt-get install nfs-common
