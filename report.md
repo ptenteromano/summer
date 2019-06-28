@@ -94,7 +94,7 @@ kubectl taint nodes --all node-role.kubernetes.io/master-
 kubectl apply -f https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
 ```
 
-6. However, the deployment failed
+6. However, the deployment failed and the scheduler keeps crashing
 ```
 kubectl get nodes
 NAME                                      STATUS     ROLES    AGE    VERSION
