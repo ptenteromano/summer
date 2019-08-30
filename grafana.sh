@@ -11,3 +11,5 @@ kubectl create -f  k8s-prometheus-grafana/prometheus/prometheus.svc.yml
 kubectl create -f   k8s-prometheus-grafana/grafana/grafana-deploy.yaml
 kubectl create -f   k8s-prometheus-grafana/grafana/grafana-svc.yaml
 kubectl create -f   k8s-prometheus-grafana/grafana/grafana-ing.yaml
+dig +short myip.opendns.com @resolver1.opendns.com
+kubectl get svc -n kube-system
