@@ -2,7 +2,10 @@
 
 ## Prerequisite
 we need a runnig cluster (master and workers connected)
-
+to check the ip of [server] or [clients], use the following code:
+```
+dig +short myip.opendns.com @resolver1.opendns.com
+```
 ### Configure server(master)
 1. On master: install and create an export dir /mnt/linuxidc
 ```
@@ -19,8 +22,8 @@ sudo nano /etc/exports
 ```
 Add the following lines to the exports file:
 ```
-/mnt/linuxidc client1IP(rw,sync,no_subtree_check)
-/mnt/linuxidc client2IP(rw,sync,no_subtree_check)
+/mnt/linuxidc [client1IP](rw,sync,no_subtree_check)
+/mnt/linuxidc [client2IP](rw,sync,no_subtree_check)
 ```
 
 3. On master: apply the configuration
@@ -45,7 +48,7 @@ sudo mkdir -p /mnt/linuxidc_client
 
 6. On workers: 
 ```
-sudo mount serverIP:/shareFolder_server /mnt/mountfolder_client
+sudo mount [serverIP]:/mnt/linuxidc /mnt/linuxidc_client
 ```
 
 ### Testing
