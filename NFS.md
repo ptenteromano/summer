@@ -1,7 +1,8 @@
 # Deploy NFS server and client on Ubuntu
 
 ## Prerequisite
-we need a runnig cluster (master and workers connected)
+we need a runnig cluster (master and workers connected). 
+## Note
 to check the ip of [server] or [clients], use the following code:
 ```
 dig +short myip.opendns.com @resolver1.opendns.com
@@ -52,8 +53,7 @@ sudo mount [serverIP]:/mnt/linuxidc /mnt/linuxidc_client
 ```
 
 ### Testing
-7. Create a new file in master /mnt/linuxidc, see if the file is shared to workers /mnt/linuxidc_client
-
+7. Create a new file in master `/mnt/linuxidc`, see if the file is shared to workers `/mnt/linuxidc_client` and vice versa.
 
 
 
