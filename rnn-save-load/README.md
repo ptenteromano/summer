@@ -4,6 +4,7 @@ Running k8s cluster, for detail please visit [repo readme](https://github.com/pt
 Using the rnn-save-load as an example
 
 # Deploy PersistentVolume and PersistentVolumeClaim
+- cd into directory `cd /summer/rnn-save-load`
 ```
 kubectl apply -f pv.yaml
 kubectl apply -f pvc.yaml
