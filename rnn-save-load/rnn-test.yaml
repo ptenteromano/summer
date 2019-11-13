@@ -1,0 +1,16 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: rnn-test
+spec:
+  restartPolicy: Never
+  volumes:
+    - name: task-pv-storage
+      persistentVolumeClaim:
+        claimName: task-pv-claim
+  containers:
+    - name: rnn
+      image: zsl3203/rnn-save-load
+      volumeMounts:
+        - mountPath: "/root/rnn"
+          name: task-pv-storage
