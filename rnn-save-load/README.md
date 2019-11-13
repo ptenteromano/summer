@@ -13,9 +13,16 @@ kubectl apply -f pvc.yaml
 ```
 kubectl apply -f rnn-test.yaml
 ```
+# Check on running pod
+```
+kubectl get pods
+```
 # Save and load
-the output logs and DL-models are saved under dir `/mnt/data`
-to load the model data and continue training, simply deploy the DL job again
+The output logs and DL-models are saved under dir `/mnt/data`
+
+`cd /mnt/data && ls`
+
+To restart training, delete pod and deploy the DL job again
 ```
 kubectl delete pods rnn-test
 kubectl apply -f rnn-test.yaml
