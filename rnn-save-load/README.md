@@ -1,5 +1,5 @@
 # Prerequisite
-Running k8s cluster, for detail please visit [repo readme](../)
+Running k8s cluster, for detail please visit [repo readme](https://github.com/ptenteromano/summer/blob/master/README.md)
 
 Using the rnn-save-load as an example
 
