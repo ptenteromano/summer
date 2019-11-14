@@ -26,3 +26,8 @@ cp-1.zsl3203-qv50305.shield-pg0.wisc.cloudlab.us   Ready    <none>   99s     v1.
 cp-2.zsl3203-qv50305.shield-pg0.wisc.cloudlab.us   Ready    <none>   97s     v1.14.1
 ctl.zsl3203-qv50305.shield-pg0.wisc.cloudlab.us    Ready    master   3m49s   v1.14.1
 ```
+
+8. (optional) Add alias and worker-labels
+- `./add_alias.sh`
+- `./add_worker_labels.sh`
+
